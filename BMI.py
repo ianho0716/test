@@ -2,8 +2,9 @@ name = input('請輸入你的名字：')
 print('Hi', name)
 height = input('請問你的身高幾公分呢？')
 weight = input('請問你體重幾公斤呢？')
-height_1 = float(height) / 100 * 2
-bmi = float(weight) / float(height_1)
+height_1 = float(height) / 100
+height_2 = float(height_1) ** 2
+bmi = float(weight) / float(height_2)
 if bmi < 18.5:
 	print(name, '你的BMI為', bmi, '，體重過輕～宵夜吃太少')
 if 18.5 <= bmi < 24:
